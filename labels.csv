@@ -1,0 +1,125 @@
+address,label,labelType,labelSubtype,notes
+# UNISWAP - DEX Routers and Core Contracts
+0x7a250d5630b4cf539739df2c5dacb4c659f2488d,Uniswap V2 Router,defi,router,Main V2 router for token swaps
+0xe592427a0aece92de3edee1f18e0157c05861564,Uniswap V3 Router,defi,router,Main V3 router for token swaps
+0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45,Uniswap V3 Router 2,defi,router,Alternative V3 router address
+0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD,Uniswap Universal Router,defi,router,Multi-protocol router (V3+); handles ERC20/NFT swaps
+0x7c07f7abe10cc8e205f3299c977973895f2f357,Uniswap Universal Router Legacy,defi,router,Legacy universal router address
+0xd92a36b0000531ef3063ded4de20a0783308446c,Uniswap Universal Router V4,defi,router,V4-compatible router for swaps
+0x1F98431c8aD98523631AE4a59f267346ea31F984,Uniswap V3 Factory,defi,factory,Emits PoolCreated events; used to compute pool addresses for attribution
+0xC36442b4a4522E871399CD717aBDD847Ab11FE88,Uniswap V3 Nonfungible Position Manager,defi,position_manager,Handles LP positions; emits Increase/DecreaseLiquidity events
+0xbfd8137f7d1516D3ea5cA83523914859ec47F573,Uniswap V3 Tick Lens,defi,lens,Query tool for tick data; may appear in multicalls
+0x61fFE014bA17989E743c5F6cB21bF9697530B21e,Uniswap V3 Quoter V2,defi,quoter,Price estimation; often called in swap TXs
+0x000000000004444c5dc75cB358380D2e3dE08A90,Uniswap V4 Pool Manager,defi,pool_manager,V4 core; handles swaps and liquidity in V4 pools
+0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e,Uniswap V4 Position Manager,defi,position_manager,V4 LP handler; emits position events
+0xd1428ba554f4c8450b763a0b2040a4935c63f06c,Uniswap V4 Position Descriptor,defi,descriptor,Metadata for V4 positions
+0x52f0e24d1c21c8a0cb1e5a5dd6198556bd9e1203,Uniswap V4 Quoter,defi,quoter,V4 price quoter
+0x000000000022D473030F116dDEE9F6B43aC78BA3,Uniswap Permit2,defi,permit,Signature-based approvals; common in modern Uniswap TXs
+0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc,Uniswap V2 USDC/WETH Pair,defi,dex,Example V2 pair address; many pairs exist
+# OTHER DEX ROUTERS
+0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f,SushiSwap Router,defi,router,Main SushiSwap router
+0x1111111254eeb25477b68fb85ed929f73a960582,1inch Router,defi,router,1inch aggregation router
+0x881d40237659c251811cec9c364ef91dc08d300c,Metamask Swap Router,defi,router,Metamask's swap aggregation router
+0xb9fc157394af804a3578134a6585c0dc9cc990d4,Curve Factory,defi,dex,Curve DEX factory contract
+0xba12222222228d8ba445958a75a0704d566bf2c8,Balancer V2 Vault,defi,dex,Balancer V2 main vault contract
+# LENDING PROTOCOLS
+0x1982b2f5814301d4e9a8b0201555376e62f82428,Aave Pool,defi,lending,Aave V2 lending pool
+0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2,Aave Pool V3,defi,lending,Aave V3 lending pool
+0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b,Compound,defi,lending,Compound lending protocol main contract
+0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5,Compound cETH,defi,lending,Compound cETH token
+0x39aa39c021dfbae8fac545936693ac917d5e7563,Compound cUSDC,defi,lending,Compound cUSDC token
+0x5d3a536e4d6dbd6114cc1ead35777bab948e3643,Compound cDAI,defi,lending,Compound cDAI token
+0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b,Compound Governance,defi,governance,Compound governance contract
+0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b,Maker VAT,defi,lending,MakerDAO VAT core contract
+# STABLECOINS
+0x7f5c764cbc14f9669b88837ca1490cca17c31607,USDC,defi,stablecoin,USDC on Optimism
+0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48,USDC,defi,stablecoin,USDC on Ethereum Mainnet
+0xdac17f958d2ee523a2206206994597c13d831ec7,USDT,defi,stablecoin,Tether USDT
+0x6b175474e89094c44da98b954eedeac495271d0f,DAI,defi,stablecoin,MakerDAO DAI stablecoin
+0x853d955acef822db058eb8505911ed77f175b99e,FRAX,defi,stablecoin,FRAX algorithmic stablecoin
+0x5f98805a4e8be255a32880fdec7f6728c6568ba0,Liquity LUSD,defi,stablecoin,Liquity LUSD stablecoin
+# STAKING PROTOCOLS
+0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0,wstETH,defi,staking,Wrapped staked ETH
+0xae7ab96520de3a18e5e111b5eaab095312d7fe84,stETH,defi,staking,Lido staked ETH
+0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46,Rocket Pool Deposit,defi,staking,Rocket Pool staking deposit contract
+# YIELD PROTOCOLS
+0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e,Yearn YFI,defi,yield,Yearn Finance YFI token
+# BRIDGES
+0x3fe38a7e90f2a4080b7b68a7b257a1c9a46b3c0b,Optimism Bridge,defi,bridge,Optimism official bridge
+0x99c9fc46f92e8a1c0dec1b1747d010903e884be1,Optimism Gateway,defi,bridge,Optimism gateway contract
+0x4c6f947ae57fccb355f6b7b396770149a855c712,Arbitrum Bridge,defi,bridge,Arbitrum official bridge
+0x8315177ab297ba92a06054ce80a67ed4dbd7ed3a,Arbitrum Gateway,defi,bridge,Arbitrum gateway contract
+0xddfabcdc4e8a77c8cba935c0f68d2d0c0b0a8e5e,Polygon Bridge,defi,bridge,Polygon PoS bridge
+0x8484ef722627bf18ca5ae6bcf031c23e6e922b30,Polygon PoS Bridge,defi,bridge,Polygon PoS bridge alternative
+0x3ee18b2214aff97000d974cf647e7c347e8fa585,Wormhole Bridge,defi,bridge,Wormhole cross-chain bridge
+0x3d359bdcddbf84e118b1eadb4e3e67140f7f1d13,Across Bridge,defi,bridge,Across Protocol bridge
+0x4dae2f939acf50442e9f1136f3b5c88e48e58f5f,Stargate Bridge,defi,bridge,Stargate Finance bridge
+0x3c2269811816cf6849f48db663e926abf79a4896,LayerZero Bridge,defi,bridge,LayerZero omnichain bridge
+0x5e4e65926ba27467555eb562121fac00d24e9dd2,zkSync Bridge,defi,bridge,zkSync classic bridge
+0x32400084c286cf3e17e7b677ea9583e60a000324,zkSync Era Bridge,defi,bridge,zkSync Era bridge
+0x3d4cc8a0aa7839d281b0101b5709a4b7c0f63a62,Hop ETH Bridge,defi,bridge,Hop Protocol ETH bridge
+0x2796317b0ff853a4f7f814365e09c362a782abb0,Synapse Bridge,defi,bridge,Synapse Protocol bridge
+# ORACLES
+0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419,Chainlink ETH/USD Oracle,defi,oracle,Chainlink price oracle
+# TOKENS
+0xd533a949740bb3306d119cc777fa900ba034cd52,Curve DAO Token CRV,defi,token,Curve DAO governance token
+0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2,Maker MKR Token,defi,token,MakerDAO governance token
+# MIXERS/PRIVACY
+0x12d66f87a04a9e220743712ce6d9bb1b5616b8fc,Tornado Cash 0.1 ETH,defi,mixer,Tornado Cash mixer 0.1 ETH pool
+0x47ce0c6ed5b0ce3d3a51fdb1c52dc66a7c3c3af4,Tornado Cash 1 ETH,defi,mixer,Tornado Cash mixer 1 ETH pool
+0x910cbd523d972eb0a6f4cae4618ad62622b39dbf,Tornado Cash 10 ETH,defi,mixer,Tornado Cash mixer 10 ETH pool
+0xa160cdab225685da1d56aa342ad8841c3b53f291,Tornado Cash 100 ETH,defi,mixer,Tornado Cash mixer 100 ETH pool
+0xd4b88df4d29f5cedd685791284bc30d8c70cf90f,Tornado Cash 1000 ETH,defi,mixer,Tornado Cash mixer 1000 ETH pool
+0x77777feddddffc19ff86db637967013e6c6a116c,Tornado Cash Governance TORN,defi,governance,Tornado Cash governance token
+# CEX - CENTRALIZED EXCHANGES
+0x1a92f7381b9f03921564a437210bb9396471050c,Circle,cex,offramp,Circle exchange address
+0x55fe002aeff02f77364de339a1292923a15844b8,Circle USDC,cex,offramp,Circle USDC minting address
+0x28c6c06298d514db089934071355e5743bf21d60,Binance Hot Wallet,cex,offramp,Binance exchange hot wallet
+0x21a31ee1afc51d94c2efccaa2092ad1028285549,Binance Hot Wallet 2,cex,offramp,Binance exchange hot wallet
+0x564286362092d8e7936f0549571a803b203aaced,Binance Hot Wallet 3,cex,offramp,Binance exchange hot wallet
+0x0681d8db095565fe8a346fa0277bffde9c0edbbf,Binance Hot Wallet 4,cex,offramp,Binance exchange hot wallet
+0xfe9e8709d3215310075d67e3ed32a380ccf451c8,Binance Hot Wallet 5,cex,offramp,Binance exchange hot wallet
+0xacd03d601e5bb1b275bb94076ff46ed9d9304351,Binance Hot Wallet 6,cex,offramp,Binance exchange hot wallet
+0x3f5ce5fbfe3e9af3971dd833d26ba9b5c936f0be,Binance Hot Wallet 7,cex,offramp,Binance exchange hot wallet
+0x85b931a32a0725be14285b66f1a22178c672d69b,Binance Hot Wallet 8,cex,offramp,Binance exchange hot wallet
+0x708396f17127c42383e3b9014072679b2f60b82f,Binance Hot Wallet 9,cex,offramp,Binance exchange hot wallet
+0xe0f0cfde7ee664943906f17f7f14342e76a5cec7,Binance Hot Wallet 10,cex,offramp,Binance exchange hot wallet
+0x8ab080c5cbcfc5b59dfda07f484b1403b7c25c07,Binance Hot Wallet 11,cex,offramp,Binance exchange hot wallet
+0xab83d182f3485cf1d6ccdd34c7cfef48e146bdf6,Binance Hot Wallet 12,cex,offramp,Binance exchange hot wallet
+0x2f47a1c2db4a3b78cda44eade915c3b19107ddcc,Binance Hot Wallet 13,cex,offramp,Binance exchange hot wallet
+0x6cc5f688a315f3dc28a7781717a9a798a59fda7b,OKX Exchange,cex,offramp,OKX exchange hot wallet
+0x236f9f97e0e62388479bf9e5ba4889e46b0273c3,OKX Exchange 2,cex,offramp,OKX exchange hot wallet
+0xa7efae728d2936e78bda97dc267687568dd593f3,OKX Exchange 3,cex,offramp,OKX exchange hot wallet
+0x2c8fbb630289363ac80705a1a61273f76fc5ec74,OKX Exchange 4,cex,offramp,OKX exchange hot wallet
+0x59fae149a8f8ec74d5bc038f8b76d25b134b9c9c,OKX Exchange 5,cex,offramp,OKX exchange hot wallet
+0x9c67e141bc4f1a9c024000e8f0481e5b6d8967e2,OKX Exchange 6,cex,offramp,OKX exchange hot wallet
+0xebb8ea128b240ed9579ac38cdf5a84b46b1c3135,OKX Exchange 7,cex,offramp,OKX exchange hot wallet
+0x061178b0c31a1404915952997c43b6d33e573f92,OKX Exchange 8,cex,offramp,OKX exchange hot wallet
+0x65a0947ba5175359bb457d3b54d39b19a2d26b05,OKX Exchange 9,cex,offramp,OKX exchange hot wallet
+0x4b4e140d1f131fdad6fb59c13af796fd194e4135,OKX Exchange 10,cex,offramp,OKX exchange hot wallet
+0x5e032243d507c743b061ef021e2ec7fce6a3a149,OKX Exchange 11,cex,offramp,OKX exchange hot wallet
+0x7cba0bce8d9a3e4e4e4e4e4e4e4e4e4e4e4e4e4e4,Coinbase,cex,offramp,Coinbase exchange hot wallet
+0x71660c4005ba85c37ccec55d0c4493e66fe77590,Coinbase 2,cex,offramp,Coinbase exchange hot wallet
+0x503828976d22510aad0201ac7ec88293211d23da,Coinbase 3,cex,offramp,Coinbase exchange hot wallet
+0xddfabcdc4e8a77c8cba935c0f68d2d0c0b0a8e5e,Coinbase 4,cex,offramp,Coinbase exchange hot wallet
+0xeb2629a2734e272bcc07bda959863f316db0d5d3,Coinbase 5,cex,offramp,Coinbase exchange hot wallet
+0x4b4e140d1f131fdad6fb59c13af796fd194e4135,Coinbase 6,cex,offramp,Coinbase exchange hot wallet
+0x71660c4005ba85c37ccec55d0c4493e66fe77590,Coinbase 7,cex,offramp,Coinbase exchange hot wallet
+0x503828976d22510aad0201ac7ec88293211d23da,Coinbase 8,cex,offramp,Coinbase exchange hot wallet
+0xddfabcdc4e8a77c8cba935c0f68d2d0c0b0a8e5e,Coinbase 9,cex,offramp,Coinbase exchange hot wallet
+0xeb2629a2734e272bcc07bda959863f316db0d5d3,Coinbase 10,cex,offramp,Coinbase exchange hot wallet
+# DEV NOTES:
+# - Protocol labels (labelType=defi): Automatically populated from known protocol router/pool addresses
+#   These include DEX routers (Uniswap, SushiSwap, 1inch), lending pools (Aave, Compound), 
+#   bridges, and other DeFi contracts. Used to verify swap classifications.
+#   Example: When destinationAttribution shows "Uniswap V2 Router", it confirms the "Swap" method is correct.
+#
+# - Manual labels (labelType=wallet): Added manually with off-chain attribution information
+#   These are custom wallet labels where you have external knowledge about the address owner.
+#   Used for sourceAttribution and destinationAttribution when you know who controls the wallet.
+#
+# - CEX labels (labelType=cex): Exchange hot wallets and off-ramp addresses
+#   These help identify when funds are moving to/from centralized exchanges.
+#
+# - These labels are automatically applied to sourceAttribution and destinationAttribution columns
+#   in the transaction table when addresses match entries in this file.
